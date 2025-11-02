@@ -15,9 +15,9 @@
 	"clock",
 	"pulseaudio"
     ],
-//    "modules-center": [
-	// "custom/wallpaper_video"
-//    ],
+    "modules-center": [
+	 "hyprland/window"
+    ],
     "modules-right": [
        // "mpd",
         //"idle_inhibitor",
@@ -35,7 +35,7 @@
         "custom/power"
     ],
      "hyprland/workspaces": {
-	       "active-only": false,
+         "active-only": false,
          "disable-scroll": false,
          "all-outputs": true,
          "show-special": true,
@@ -65,6 +65,11 @@
     "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
+
+"hyprland/window": {
+    "format": "<span>{}</span>",
+    "tooltip": false
+},
     "hyprland/scratchpad": {
         "format": "{icon} fgfg {count}",
         "show-empty": false,
@@ -200,7 +205,7 @@
       }
     },
     "network": {
-	"interface": "eth0",
+	"interface": "br1",
         "format": "{bandwidthDownBits}  {bandwidthUpBits} " ,
         "format-wifi": " {essid}",
         "tooltip-format": "󰈀 {ifname} via {gwaddr}",
