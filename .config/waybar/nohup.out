@@ -1,0 +1,13 @@
+[2025-11-06 07:39:50.011] [info] Using configuration file /home/syafiq/.config/waybar/config
+[2025-11-06 07:39:50.012] [error] Error parsing JSON: * Line 207, Column 7
+  Missing '}' or object member name
+
+[2025-11-06 07:42:25.461] [info] Using configuration file /home/syafiq/.config/waybar/config
+[2025-11-06 07:42:25.463] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2025-11-06 07:42:25.463] [info] Using CSS file /home/syafiq/.config/waybar/style.css
+[2025-11-06 07:42:25.470] [info] Hyprland IPC starting
+[2025-11-06 07:42:25.470] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-11-06 07:42:25.476] [warning] 'swap-icon-label' must be a bool.
+[2025-11-06 07:42:25.479] [warning] No battery named BAT2
+[2025-11-06 07:42:25.615] [warning] Requested height: 30 is less than the minimum height: 39 required by the modules
+[2025-11-06 07:42:25.615] [info] Bar configured (width: 1366, height: 39) for output: eDP-1

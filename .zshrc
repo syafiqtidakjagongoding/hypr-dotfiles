@@ -3,7 +3,7 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh/custom/plugins"
-
+alias vi="vim"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -65,13 +65,12 @@ ZSH_THEME="robbyrussell"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-
 autoload -Uz compinit
 compinit
 
 export PATH=$HOME/.local/bin:$PATH
 
-eval "$(oh-my-posh init zsh --config ~/.poshthemes/bubblesextra.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.poshthemes/catppuccin_latte.omp.json)"
 
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
@@ -116,7 +115,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-eval "$(pyenv init - zsh)"
-export PATH=/opt/vscode/bin:$PATH
-eval "$(rbenv init -)"
+export PATH="$HOME/bin:$PATH"

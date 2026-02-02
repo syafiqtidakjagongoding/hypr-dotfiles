@@ -2,8 +2,8 @@
     "layer": "bottom", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30,
-	"exclusive": true,
-	"passthrough": false,
+	  "exclusive": true,
+	  "passthrough": false,
     "fixed-center": true,
     "width": "100%", // Waybar width
     "spacing": 3, // Gaps between modules (4px)
@@ -16,13 +16,13 @@
 	"pulseaudio"
     ],
     "modules-center": [
-	 "hyprland/window"
+	   "hyprland/window"
     ],
     "modules-right": [
-       // "mpd",
+       "mpd",
         //"idle_inhibitor",
-        "network",
         //"power-profiles-daemon",
+        "custom/net-status",
         "cpu",
         "memory",
    //  	"temperature",
@@ -205,15 +205,15 @@
       }
     },
     "network": {
-	"interface": "br1",
+        "interface": "wlan0",
         "format": "{bandwidthDownBits}  {bandwidthUpBits} " ,
         "format-wifi": " {essid}",
         "tooltip-format": "󰈀 {ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-	"interval":1,
-	"on-click-right": "kitty nmtui"
+      	"interval":1,
+      	"on-click-right": "kitty nmtui"
     },
    "pulseaudio": {
     "format": " {volume}% {icon} ",
@@ -233,6 +233,12 @@
     "on-click": "pavucontrol -t 3",
 	"tooltip-format": "{icon} {desc} | {volume}%",
     "smooth-scrolling-threshold": 1
+},
+"custom/net-status": {
+    "exec": "~/.config/waybar/net-status.sh",
+    "interval": 5,
+    "return-type": "json",
+    "format": "{}"
 },
 "custom/cava": {
         // "format": "{icon} {}",

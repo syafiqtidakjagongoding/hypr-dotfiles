@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en" lang="en" >
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/archweb.css">
+    <link rel="stylesheet" href="/static/css/aurweb.css">
+
+    <!-- Resources -->
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+
+    <!-- Alternate resources -->
+    <link rel="alternate" type="application/rss+xml"
+          title="Newest Packages RSS" href="/rss">
+
+    <!-- Include local typeahead -->
+    <script type="text/javascript" src="/static/js/typeahead.js"></script>
+
+    <title>AUR (en) - Home</title>
+</head>
+
+    <body>
+        <div id="archnavbar" class="anb-aur">
+    <div id="archnavbarlogo">
+        <h1>
+            <a href="/" title="Return to the main page">Arch Linux User Repository</a>
+        </h1>
+    </div>
+    <div id="archnavbarmenu">
+        <ul id="archnavbarlist">
+            <li id="anb-home"><a href="https://www.archlinux.org/" title="Arch news, packages, projects and more">Home</a></li>
+            <li id="anb-packages"><a href="https://www.archlinux.org/packages/" title="Arch Package Database">Packages</a></li>
+            <li id="anb-forums"><a href="https://bbs.archlinux.org/" title="Community forums">Forums</a></li>
+            <li id="anb-wiki"><a href="https://wiki.archlinux.org/" title="Community documentation">Wiki</a></li>
+            <li id="anb-gitlab"><a href="https://gitlab.archlinux.org/archlinux" title="GitLab">GitLab</a></li>
+            <li id="anb-security"><a href="https://security.archlinux.org/" title="Arch Linux Security Tracker">Security</a></li>
+            <li id="anb-aur"><a href="/" title="Arch Linux User Repository">AUR</a></li>
+            <li id="anb-download"><a href="https://www.archlinux.org/download/" title="Get Arch Linux">Download</a></li>
+        </ul>
+    </div>
+</div>
+        <div id="content">
+    <div id="lang_sub">
+    <form method="post" action="/language">
+        <fieldset>
+            <div>
+                <select id="id_setlang" name="set_lang">
+                    
+                    <option
+                        value="ar"
+                        
+                    >
+                        العربية
+                    </option>
+                    
+                    <option
+                        value="ast"
+                        
+                    >
+                        Asturianu
+                    </option>
+                    
+                    <option
+                        value="ca"
+                        
+                    >
+                        Català
+                    </option>
+                    
+                    <option
+                        value="cs"
+                        
+                    >
+                        Český
+                    </option>
+                    
+                    <option
+                        value="da"
+                        
+                    >
+                        Dansk
+                    </option>
+                    
+                    <option
+                        value="de"
+                        
+                    >
+                        Deutsch
+                    </option>
+                    
+                    <option
+                        value="el"
+                        
+                    >
+                        Ελληνικά
+                    </option>
+                    
+                    <option
+                        value="en"
+                        
+                        selected="selected"
+                        
+                    >
+                        English
+                    </option>
+                    
+                    <option
+                        value="es"
+                        
+                    >
+                        Español
+                    </option>
+                    
+                    <option
+                        value="es_419"
+                        
+                    >
+                        Español (Latinoamérica)
+                    </option>
+                    
+                    <option
+                        value="fi"
+                        
+                    >
+                        Suomi
+                    </option>
+                    
+                    <option
+                        value="fr"
+                        
+                    >
+                        Français
+                    </option>
+                    
+                    <option
+                        value="he"
+                        
+                    >
+                        עברית
+                    </option>
+                    
+                    <option
+                        value="hr"
+                        
+                    >
+                        Hrvatski
+                    </option>
+                    
+                    <option
+                        value="hu"
+                        
+                    >
+                        Magyar
+                    </option>
+                    
+                    <option
+                        value="it"
+                        
+                    >
+                        Italiano
+                    </option>
+                    
+                    <option
+                        value="ja"
+                        
+                    >
+                        日本語
+                    </option>
+                    
+                    <option
+                        value="nb"
+                        
+                    >
+                        Norsk
+                    </option>
+                    
+                    <option
+                        value="nl"
+                        
+                    >
+                        Nederlands
+                    </option>
+                    
+                    <option
+                        value="pl"
+                        
+                    >
+                        Polski
+                    </option>
+                    
+                    <option
+                        value="pt_BR"
+                        
+                    >
+                        Português (Brasil)
+                    </option>
+                    
+                    <option
+                        value="pt_PT"
+                        
+                    >
+                        Português (Portugal)
+                    </option>
+                    
+                    <option
+                        value="ro"
+                        
+                    >
+                        Română
+                    </option>
+                    
+                    <option
+                        value="ru"
+                        
+                    >
+                        Русский
+                    </option>
+                    
+                    <option
+                        value="sk"
+                        
+                    >
+                        Slovenčina
+                    </option>
+                    
+                    <option
+                        value="sr"
+                        
+                    >
+                        Srpski
+                    </option>
+                    
+                    <option
+                        value="tr"
+                        
+                    >
+                        Türkçe
+                    </option>
+                    
+                    <option
+                        value="uk"
+                        
+                    >
+                        Українська
+                    </option>
+                    
+                    <option
+                        value="zh_CN"
+                        
+                    >
+                        简体中文
+                    </option>
+                    
+                    <option
+                        value="zh_TW"
+                        
+                    >
+                        正體中文
+                    </option>
+                    
+                </select>
+
+                <!-- Pass our current url path as next. -->
+                <input type="hidden" name="next" value="/">
+
+                <!-- Pass query_params over to /language via POST. -->
+                <input type="hidden" name="q" value="">
+
+                <input type="submit" value="Go">
+            </div>
+        </fieldset>
+    </form>
+</div>
+    <div id="archdev-navbar">
+    <ul>
+        
+            
+            <li><a href="/">AUR Home</a></li>
+        
+
+        
+        <li><a href="/packages">Packages</a></li>
+
+        
+            
+            <li><a href="/register">Register</a></li>
+
+            
+            <li><a href="/login?next=/">Login</a></li>
+        
+    </ul>
+</div>
+
+    
+    <div id="content-left-wrapper">
+        <div id="content-left">
+            
+                <div id="intro" class="box">
+    <h2>AUR  Home</h2>
+    <p>
+        Welcome to the AUR! Please read the <a href="https://wiki.archlinux.org/title/AUR_User_Guidelines">AUR User Guidelines</a> for more information and the <a href="https://wiki.archlinux.org/title/AUR_submission_guidelines">AUR Submission Guidelines</a> if you want to contribute a PKGBUILD.
+        Contributed PKGBUILDs <strong>must</strong> conform to the <a href="https://wiki.archlinux.org/title/Arch_Packaging_Standards">Arch Packaging Standards</a> otherwise they will be deleted!
+        Remember to vote for your favourite packages!
+        Some packages may be provided as binaries in [extra].
+    </p>
+    <p class="important">
+        DISCLAIMER:
+        AUR packages are user produced content. Any use of the provided files is at your own risk.
+    </p>
+    <p class="readmore"><a href="https://wiki.archlinux.org/title/AUR">Learn more...</a></p>
+</div>
+<div id="news">
+    <h3><a>Support</a><span class="arrow"></span></h3>
+<h4>Package Requests</h4>
+<div class="article-content">
+    <p>
+    There are three types of requests that can be filed in the <var>Package Actions</var> box on the package details page:
+    </p>
+    <ul>
+        <li><em>Orphan Request</em>: Request a package to be disowned, e.g. when the maintainer is inactive and the package has been flagged out-of-date for a long time.</li>
+        <li><em>Deletion Request</em>: Request a package to be removed from the Arch User Repository. Please do not use this if a package is broken and can be fixed easily. Instead, contact the maintainer and file orphan request if necessary.</li>
+        <li><em>Merge Request</em>: Request a package to be merged into another one. Can be used when a package needs to be renamed or replaced by a split package.</li>
+</ul>
+    <p>
+If you want to discuss a request, you can use the <a href="https://lists.archlinux.org/mailman3/lists/aur-requests.lists.archlinux.org/">aur-requests</a> mailing list. However, please do not use that list to file requests.
+    </p>
+</div>
+<h4>Submitting Packages</h4>
+<div class="article-content">
+<p>
+    Git over SSH is now used to submit packages to the AUR. See the <a href="https://wiki.archlinux.org/title/Arch_User_Repository#Submitting_packages">Submitting packages</a> section of the Arch User Repository ArchWiki page for more details.
+</p>
+
+    <p>
+        The following SSH fingerprints are used for the AUR:
+    <p>
+    <ul>
+    
+        <li><code>Ed25519</code>: <code>SHA256:RFzBCUItH9LZS0cKB5UE6ceAYhBD5C8GeOBip8Z11+4</code>
+    
+        <li><code>ECDSA</code>: <code>SHA256:uTa/0PndEgPZTf76e1DFqXKJEXKsn7m9ivhLQtzGOCI</code>
+    
+        <li><code>RSA</code>: <code>SHA256:5s5cIyReIfNNVGRFdDbe3hdYiI5OelHGpw2rOUud3Q8</code>
+    
+</ul>
+
+</div>
+<h4>Discussion</h4>
+<div class="article-content">
+    <p>
+    General discussion regarding the Arch User Repository (AUR) and Package Maintainer structure takes place on <a href="https://lists.archlinux.org/mailman3/lists/aur-general.lists.archlinux.org/">aur-general</a>. For discussion relating to the development of the AUR web interface, use the <a href="https://lists.archlinux.org/mailman3/lists/aur-dev.lists.archlinux.org/">aur-dev</a> mailing list.
+    <p>
+</div>
+<h4>Bug Reporting</h4>
+<div class="article-content">
+    <p>
+    If you find a bug in the AUR web interface, please fill out a bug report on our <a href="https://gitlab.archlinux.org/archlinux/aurweb/-/issues">bug tracker</a>. Use the tracker to report bugs in the AUR web interface <strong>only</strong>. To report packaging bugs contact the maintainer or leave a comment on the appropriate package page.
+    </p>
+</div>
+</div>
+
+<!-- Bootstrap typeahead for the homepage. -->
+<script type="text/javascript" src="/static/js/typeahead-home.js"></script>
+
+<!-- Stub inline javascript with a nonce. Used for testing purposes. -->
+<script type="text/javascript" nonce=6086a3a0>
+function NONEXISTENT() {}
+NONEXISTENT();
+</script>
+            
+        </div>
+    </div>
+    <div id="content-right">
+        <div id="pkgsearch" class="widget">
+    <form id="pkgsearch-form" method="get" action="/packages">
+        <fieldset>
+            <label for="pkgsearch-field">Package Search:</label>
+            <input type="hidden" name="O" value="0" />
+            <input id="pkgsearch-field"
+                   type="text"
+                   name="K"
+                   size="30"
+                   maxlength="35"
+                   autocomplete="off" />
+        </fieldset>
+    </form>
+</div>
+        <div id="pkg-updates" class="widget box">
+    <h3>
+        Recent Updates
+        <span class="more">
+            (<a href="/packages/?SB=l&SO=d">more</a>)
+        </span>
+    </h3>
+    <a class="rss-icon latest" href="/rss"
+       title="AUR Latest Packages RSS Feed">
+        <img src="/static/images/rss.svg" alt="RSS Feed" />
+    </a>
+    <a class="rss-icon" href="/rss/modified"
+       title="AUR Modified Packages RSS Feed">
+        <img src="/static/images/rss.svg" alt="RSS Feed" />
+    </a>
+
+    <table>
+        <tbody>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/mangabox-bin">
+                            mangabox-bin 0.3.7-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:43 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/tana">
+                            tana 1.498.21-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:40 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/note-gen">
+                            note-gen null-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:33 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/chatterino2-nightly-bin">
+                            chatterino2-nightly-bin 2.5.4.20260105T011304-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:30 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/opkssh-bin">
+                            opkssh-bin 0.11.0-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:29 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/rclone-ui-bin">
+                            rclone-ui-bin 3.2.1-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:29 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/opkssh">
+                            opkssh 0.11.0-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:29 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/keystore-explorer-bin">
+                            keystore-explorer-bin 5.6.1-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:29 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/meson-git">
+                            meson-git 1.10.0.r79.4a9075b86-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:26 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/python-juliacall">
+                            python-juliacall 0.9.31-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:21 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/python-juliapkg">
+                            python-juliapkg 0.1.22-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:16 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/seamly2d">
+                            seamly2d 2026.1.5.213-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:07 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/crystal-nightly">
+                            crystal-nightly 20260105-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 09:04 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/gittop-bin">
+                            gittop-bin 0.3.0-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 08:59 (UTC)
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td class="pkg-name">
+                        <a href="/packages/ibus-mozc-with-jp-dict">
+                            ibus-mozc-with-jp-dict 2.32.5994.102.r108.gf9feca5-1
+                        </a>
+                    </td>
+                    <td class="pkg-date">
+                        2026-01-05 08:56 (UTC)
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+</div>
+        <div id="pkg-stats" class="widget box">
+    <h3>Statistics</h3>
+
+    <table>
+        <tr>
+            <td class="stat-desc">Packages</td>
+            <td>97236</td>
+        </tr>
+        <tr>
+            <td class="stat-desc">Orphan Packages</td>
+            <td>14058</td>
+        </tr>
+        <tr>
+            <td class="stat-desc">
+                Packages added in the past 7 days
+            </td>
+            <td>273</td>
+        </tr>
+        <tr>
+            <td class="stat-desc">
+                Packages updated in the past 7 days
+            </td>
+            <td>2058</td>
+        </tr>
+        <tr>
+            <td class="stat-desc">
+                Packages updated in the past year
+            </td>
+            <td>32451</td>
+        </tr>
+        <tr>
+            <td class="stat-desc">
+                Packages never updated
+            </td>
+            <td>21183</td>
+        </tr>
+        <tr>
+            <td class="stat-desc">
+                Registered Users
+            </td>
+            <td>132616</td>
+        </tr>
+        <tr>
+            <td class="stat-desc">
+                Package Maintainers
+            </td>
+            <td>66</td>
+        </tr>
+    </table>
+</div>
+
+
+    </div>
+
+
+
+    <div id="footer">
+    <p>
+        aurweb <a href="https://gitlab.archlinux.org/archlinux/aurweb/-/commits/v6.2.18">v6.2.18</a>
+        
+    </p>
+    <p>Report issues <a href="https://gitlab.archlinux.org/archlinux/aurweb/-/issues/new?issuable_template=Bug">here</a>.</p>
+    <p>Copyright &copy; 2004-2026 aurweb Development Team.</p>
+    <p>AUR packages are user produced content. Any use of the provided files is at your own risk.</p>
+</div>
+</div>

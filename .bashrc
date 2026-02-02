@@ -20,3 +20,4 @@ fi
 
 [[ -s "/home/syafiq/.gvm/scripts/gvm" ]] && source "/home/syafiq/.gvm/scripts/gvm"
 eval "$(rbenv init -)"
+export PATH="$HOME/bin:$PATH"
